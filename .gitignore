@@ -1,0 +1,11 @@
+Icon?
+*.log
+log.txt
+Thumbs.db
+.DS_Store
+.bash_history
+desktop.ini
+/.cache/*
+/.idea/*
+/.ssh/*
+/.npm/*
