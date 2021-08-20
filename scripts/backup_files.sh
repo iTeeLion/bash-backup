@@ -1,7 +1,8 @@
 #!/bin/bash
 
 load_config () {
-    CFG_PATH=".config/backup_files_$1.cfg"
+    SCRIPT_DIR="`dirname $0`"
+    CFG_PATH="$SCRIPT_DIR/.config/backup_files_$1.cfg"
     if [ -e $CFG_PATH ]
     then
         tr -d '\r' < $CFG_PATH > $CFG_PATH.tmp
