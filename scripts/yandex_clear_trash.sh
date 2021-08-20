@@ -1,7 +1,8 @@
 #!/bin/bash
 
 load_config () {
-    CFG_PATH=".config/yandex_clear_trash.cfg"
+    SCRIPT_DIR="`dirname $0`"
+    CFG_PATH="$SCRIPT_DIR/.config/yandex_clear_trash.cfg"
     if [ -e $CFG_PATH ]
     then
         tr -d '\r' < $CFG_PATH > $CFG_PATH.tmp
